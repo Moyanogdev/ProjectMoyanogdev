@@ -31,10 +31,14 @@ header{
     height: 55px;
 }
 
-.nav_ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.navbar{
+    width: 100%;
+}
+
+#iconNav{
+    background-color: #1CB5E0;
+    color: #1CB5E0;
+    border-radius: 10px;
 }
 
 header ul li{
