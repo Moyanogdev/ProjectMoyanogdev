@@ -14,49 +14,29 @@ body{
     background: linear-gradient(#000046, #1CB5E0);
 }
 
-header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10000;
-}
-
 #imgLogo{
-    width: 230px;
-    height: 55px;
-}
-
-.navbar{
-    width: 100%;
+    width: 215px;
+    height: 45px;
 }
 
 #iconNav{
     background-color: #1CB5E0;
-    color: #1CB5E0;
+    color: #000046;
     border-radius: 10px;
 }
 
-header ul li{
+.nav-link{
     list-style: none;
-    margin-left: 20px;
-}
-
-header ul li a{
     text-decoration: none;
-    padding: 6px 15px ;
     color: #1CB5E0;
-    border-radius: 20px;
+    padding: 6px 15px ;
+    border-radius: 15px;
 }
 
-header ul li a:hover,
-header ul li a.active{
-    background: #1CB5E0;
-    color: #000046;
+.nav-link:hover,
+.nav-link.active{
+    background-color:#1CB5E0;
+    color:#000046;
 }
 
 #section_one{
