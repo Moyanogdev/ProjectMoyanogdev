@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto;
+    font-family: 'Prompt', sans-serif;
     scroll-behavior: smooth;
 
 }
@@ -12,6 +12,21 @@ body{
     min-height: 100vh;
     overflow-x: hidden;
     background: linear-gradient(#000046, #1CB5E0);
+}
+
+.btn{
+    border-style: solid;
+    border-width: 2px;
+    border-color: whitesmoke;
+}
+
+.btn:hover{
+    background-color: whitesmoke;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000046;
+    font-weight: 550;
+    color: #000046;
 }
 
 #imgLogo{
@@ -26,11 +41,13 @@ body{
 }
 
 .nav-link{
+    margin-inline: 8px;
     list-style: none;
     text-decoration: none;
     color: #1CB5E0;
     padding: 6px 15px ;
     border-radius: 15px;
+    font-weight: 500;
 }
 
 .nav-link:hover,
