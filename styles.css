@@ -122,6 +122,36 @@ main{
     padding: 10px;
 }
 
+.skills{
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.skills .hr-line{
+    width: 100px;
+    height: 4px;
+    background-color:#000046;
+    display: inline-block;
+}
+
+.skills h1{
+    text-transform: uppercase;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.biSkills{
+    font-size: 30px;
+    color: #1CB5E0;
+}
+
+.biSkills:hover{
+    color: white;
+}
+
+.progress-bar{
+    background-color:#1CB5E0;
+}
 .services{
     margin-top: 65px;
     margin-bottom: 65px;
@@ -170,14 +200,6 @@ main{
     transition: .4s ease-in-out;
 }
 
-.iconNet{
-    margin-inline: 20px;
-    cursor: pointer;
-}
-
-.iconNet:hover{
-    transform: scale(1.1, 1.1);
-}
 
 .works{
     margin-top: 65px;
@@ -220,7 +242,7 @@ main{
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    color:#000046; 
+    color:white;
     text-decoration: none;
 }
 
@@ -230,7 +252,7 @@ main{
 }
 
 .link-arrow:hover{
-    color: white;
+    color:#1CB5E0;
 }
 
 .link-arrow:hover i{
@@ -239,9 +261,12 @@ main{
 
 #contact form .form-control{
     border-color: #000046;
+    background-color:#1d1d42;
     border-width: 4px;
-    border-radius: 30px;
+    border-radius: 10px;
+    color:whitesmoke;
 }
+
 
 #footer{
     position: relative;
