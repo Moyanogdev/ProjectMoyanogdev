@@ -52,6 +52,7 @@ h1{
     padding: 6px 15px ;
     border-radius: 15px;
     font-weight: 500;
+    transition: .4s ease-in;
 }
 
 .nav-link:hover,
@@ -117,9 +118,38 @@ main{
     width: 350;
 }
 
-.aboutme .btn{
-    border-radius: 34px;
-    padding: 10px;
+.allBtn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 0;
+    color: white;
+    border-style: solid;
+    border-width: .5px;
+    border-color:white;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+.allBtn a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.allBtn a:hover span{
+    width: 100%;
+}
+
+.allBtn a:hover{
+    color:#000046;
 }
 
 .skills{
@@ -143,6 +173,7 @@ main{
 .biSkills{
     font-size: 30px;
     color: #1CB5E0;
+    transition: .4s ease-in-out;
 }
 
 .biSkills:hover{
@@ -191,6 +222,7 @@ main{
     justify-content: center;
     border-radius: 30px;
     margin-right: 16px;
+    transition: .4s ease-in-out;
 }
 
 .icon:hover{
@@ -260,11 +292,15 @@ main{
 }
 
 #contact form .form-control{
-    border-color: #000046;
-    background-color:#1d2d42;
-    border-width: 4px;
+    border-color: white;
+    background-color:#202041;
+    border-width: 3px;
     border-radius: 10px;
     color:whitesmoke;
+}
+
+#contact form .form-control:focus{
+    border-color:#000046;
 }
 
 
