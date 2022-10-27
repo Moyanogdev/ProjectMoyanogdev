@@ -1,3 +1,4 @@
+// HOME SCROLL EFECTS
 
 let stars = document.getElementById('stars');
 let planet = document.getElementById('planet');
