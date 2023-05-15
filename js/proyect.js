@@ -1,3 +1,9 @@
+// LOADER EFECTS
+
+window.addEventListener("load", function(){
+    document.getElementById("loader").classList.toggle("loader2")
+})
+
 // HOME SCROLL EFECTS
 
 let stars = document.getElementById('stars');
