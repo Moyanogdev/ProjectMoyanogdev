@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Desarrollo web, Desarrollo Frontend, Desarrollador de sitios web, Desarrollador de páginas web, Desarrollador Frontend en Argentina, Diseñador web, Desarrollo web en Argentina, Diseños web en Argentina, Desarrollo de aplicaciones. Web developer, Frontend developer, Development of web sites and applications, Desing websites.">
+    <meta name="description" content="Moyano Gonzalo Federico, Frontend developer. Development and design of web sites and applications. Córdoba, Argentina.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="img/faviconMgdev.png">
     <link rel="stylesheet" href="css/styles.css">
     <title>Works Moyanogdev</title>
@@ -17,25 +20,24 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="#aboutme">
-                    <img src="img/logoMoyanogdev.png" alt="Logo" width="150" height="30">
-                </a>
-                <button class="navbar-toggler" type="button" id="iconNav" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto">
-                        <a class="nav-link" href="#aboutme">About me</a>
-                        <a class="nav-link" href="#skills">Skills</a>
-                        <a class="nav-link" href="#services">Services</a>
-                        <a class="nav-link" href="#works">Works</a>
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </div>
-                </div>
+        <div class="header">
+            <nav>
+                <img src="img/logoMoyanogdev.png" alt="Moyanogdev Logo" class="logoHeader">
+                <ul id="sideMenu">
+                    <li><a href="#sectionHome">Home</a></li>
+                    <li><a href="#sectionAbout">About Works</a></li>
+                    <li><a href="#sectionCollaborations">Collaborations</a></li>
+                    <li><a href="#sectionContact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="language">
+                <span>En</span>
+                <input type="checkbox" class="check">
+                <span>Es</span>
             </div>
-        </nav>
+        </div>
     </header>
 
     <!-- Loader Section -->
@@ -52,7 +54,7 @@
         </div>
     </section>
 
-    <!-- Section One | Home section -->
+    <!-- Section One -->
     <section id="section_one">
         <img src="img/stars.png" alt="Stars" id="stars">
         <img src="img/planet.png" alt="Planet" id="planet">
@@ -62,31 +64,7 @@
 
     <main>
 
-        <!-- About Me Section -->
-        <section class="py-5">
-            <a name="aboutme"></a>
-            <div class="container aboutme">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="services text-center">
-                            <div class="hr-line"></div>
-                            <h1 class="display-5">About Me</h1>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 d-flex align-items-center ms-auto">
-                        <div>
-                            <p class="mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, ipsam suscipit at ullam non labore? Eius iusto hic esse, asperiores eos incidunt voluptatem molestiae veritatis, ullam quidem libero ut neque?. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores consectetur illo error quisquam porro ea eaque iusto provident. Odit repellat atque quia quidem dignissimos quam? Earum velit voluptate voluptas eum.</p>
-                            <p class="mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, magnam veritatis iste doloremque corporis voluptatum officiis consectetur sed, ab, earum ut. Minima sunt id facere doloribus, obcaecati eum dolores nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi saepe vero molestiae recusandae ullam architecto provident maxime assumenda iusto sapiente ipsum iure, harum vitae omnis! Impedit reprehenderit beatae vitae odit?</p>
-                            <div class="text-center allBtn">
-                                <a href="#contact"><span></span>Contact Me</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
+        <!-- Home Section -->
         <section class="skillSection py-5">
             <a name="skills"></a>
             <div class="container-lg">
@@ -153,7 +131,7 @@
             </div>
         </section>
 
-        <!-- Services Section -->
+        <!-- About Works Section -->
         <section class="py-5">
             <a name="services"></a>
             <div class="container">
@@ -215,7 +193,7 @@
             </div>
         </section>
 
-        <!-- Works Section -->
+        <!-- Collaborations Section -->
         <section class="py-5 workSection">
             <a name="works"></a>
             <div class="container">
@@ -269,37 +247,25 @@
         </section>
 
         <!-- Contact Section-->
-        <section class="py-5">
-            <a name="contact"></a>
-            <div class="container" id="contact">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="services text-center">
-                            <div class="hr-line"></div>
-                            <h1 class="display-5 mb-5">Contact</h1>
-                            <h5>If you have any request or question, leave your query in the form. I´m interested in freelance opportunities.</h5>
+        <section id="sectionContact">
+            <div class="containerContact">
+                <h1 class="tittleContact">Contact Me</h1>
+                <div class="columnContact">
+                    <div class="contactInfo">
+                        <p><i class="fa-solid fa-paper-plane"></i>gmoyanodvlpr@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+54 351 2416034</p>
+                        <div class="imgContact">
+                            <img src="img/contactMe.png" alt="Contact Section image">
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <form action="" class="row">
-                            <div class="col-lg-6 mb-4">
-                                <input type="text" class="form-control" placeholder="Name">
-                            </div>
-                            <div class="col-lg-6 mb-4">
-                                <input type="email" class="form-control" placeholder="Email">
-                            </div>
-                            <div class="col-lg-12 mb-4">
-                                <input type="text" class="form-control" placeholder="Subject">
-                            </div>
-                            <div class="col-lg-12 mb-4">
-                                <textarea class="form-control" rows="10" placeholder="Message"></textarea>
-                            </div>
-                            <div class="col-12 mb-4 text-center allBtn">
-                                <a href="#"><span></span>Send Message</a>
-                            </div>
+                    <div class="contactForm">
+                        <form id="form">
+                            <input name="from_name" type="text" placeholder="Name" id="from_name" required>
+                            <input name="email" type="email" placeholder="Email" id="email" required>
+                            <textarea name="message" type="text" rows="10" placeholder="Your Message" id="message" required></textarea>
+                            <button type="submit" id="button"><span></span>Send Message</button>
                         </form>
+                        <span id="msgConfirm"></span>
                     </div>
                 </div>
             </div>
@@ -314,6 +280,13 @@
 
     </footer>
 
+    <!-- Scroll Reveal JS-->
+    <script src="js/scrollreveal.min.js"></script>
+    <!-- Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- Email Js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript"> emailjs.init('y2fX3XPYh9LNGoqcA') </script>
     <!-- Bootstrap CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <!-- JavaScript -->
