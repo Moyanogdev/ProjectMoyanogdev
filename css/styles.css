@@ -1,4 +1,6 @@
-/* General Styles */
+/*$boxBackground: rgb(16, 16, 16);
+$hoverBox: rgb(29, 29, 29);
+$modalColor: rgba(17, 17, 17, 0.741); */
 * {
   margin: 0;
   padding: 0;
@@ -9,54 +11,153 @@
 body {
   min-height: 100vh;
   overflow-x: hidden;
-  background: linear-gradient(#000046, #1CB5E0); }
-
-h1 {
-  font-weight: 900; }
+  background: linear-gradient(#000046, #1CB5E0);
+  color: aliceblue; }
 
 main {
+  overflow: hidden;
   background: #540e33;
   color: aliceblue; }
 
-.btn {
-  border-style: solid;
-  border-width: 2px;
-  border-color: whitesmoke; }
+.header {
+  padding: 10px 10%; }
 
-.btn:hover {
-  background-color: whitesmoke;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #000046;
-  font-weight: 550;
-  color: #000046; }
+.logoHeader {
+  width: 130px; }
 
-/* HEADER STYLES */
-/* Logo Style */
-#imgLogo {
-  width: 215px;
-  height: 45px; }
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; }
 
-/* Navbar styles */
-#iconNav {
-  background-color: #1CB5E0;
-  color: #000046;
-  border-radius: 10px; }
-
-.nav-link {
-  margin-inline: 8px;
+nav ul li {
+  display: inline-block;
   list-style: none;
-  text-decoration: none;
-  color: white;
-  padding: 6px 15px;
-  border-radius: 15px;
-  font-weight: 500;
-  transition: .4s ease-in; }
+  margin: 10px 20px; }
 
-.nav-link:hover,
-.nav-link.active {
-  background-color: #1CB5E0;
-  color: #000046; }
+nav ul li a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  position: relative; }
+  nav ul li a:hover {
+    color: aliceblue; }
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: aliceblue;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s; }
+
+nav ul li a:hover::after {
+  width: 100%; }
+
+nav .fa-solid {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+  top: 25px;
+  left: 30px; }
+
+.language {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-right: 15px;
+  font-weight: 600; }
+
+.check {
+  position: relative;
+  width: 40px;
+  cursor: pointer;
+  margin-inline: 6px;
+  transition: .4s ease-in-out; }
+  .check::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 21px;
+    background-color: black;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 25px; }
+  .check::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 22px;
+    background-color: white;
+    border-radius: 25px; }
+
+.check:checked::after {
+  left: 25px; }
+
+.check:checked::before {
+  background-color: black; }
+
+/* Header Media Queries */
+@media screen and (max-width: 770px) {
+  .language span {
+    font-size: 12px; }
+  .check {
+    position: relative;
+    width: 30px;
+    cursor: pointer;
+    margin-inline: 5px;
+    transition: .4s ease-in-out; }
+    .check::before {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 16px;
+      background-color: black;
+      border-color: white;
+      border-style: solid;
+      border-width: 2px;
+      border-radius: 25px; }
+    .check::after {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 17px;
+      background-color: white;
+      border-radius: 25px; }
+  .check:checked::after {
+    left: 16px; } }
+
+@media only screen and (max-width: 1200px) {
+  nav .fa-solid {
+    display: block;
+    font-size: 25px; }
+  nav ul {
+    background: #540e33;
+    color: aliceblue;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s; }
+  nav ul li {
+    display: block;
+    margin: 40px; }
+  nav ul li a {
+    color: aliceblue;
+    font-weight: 600; }
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    cursor: pointer; } }
 
 /* Loader Styles */
 .lds-ring {
@@ -115,8 +216,6 @@ main {
   width: 100px;
   height: 20px; }
 
-/* HOME SECTION STYLES */
-/* Home efects Styles */
 #section_one {
   position: relative;
   width: 100%;
@@ -311,16 +410,115 @@ main {
 .link-arrow:hover i {
   transform: translate(5px, -5px); }
 
-/* CONTACT SECTION STYLES */
-#contact form .form-control {
-  border-color: white;
-  background-color: #202041;
-  border-width: 3px;
-  border-radius: 10px;
-  color: whitesmoke; }
+/* CONTACT STYLES */
+#sectionContact {
+  padding: 100px 0;
+  width: 100%; }
 
-#contact form .form-control:focus {
-  border-color: #000046; }
+.containerContact {
+  width: 80%;
+  margin: auto; }
+
+.containerContact h1 {
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center; }
+
+.columnContact {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 25px; }
+
+.contactInfo {
+  flex-basis: 35%; }
+
+.contactInfo p {
+  margin-top: 25px; }
+
+.contactInfo p i {
+  color: aliceblue;
+  margin-right: 12px;
+  font-size: 20px; }
+
+.imgContact img {
+  width: 100%;
+  margin-top: 20px; }
+
+.contactForm {
+  flex-basis: 60%; }
+
+.contactForm form {
+  width: 100%; }
+
+form input, form textarea {
+  width: 100%;
+  outline: none;
+  border: 0;
+  background-color: #2f2f4e;
+  padding: 15px;
+  margin: 15px 0;
+  font-size: 15px;
+  border-radius: 10px;
+  color: aliceblue;
+  box-shadow: 8px 8px 8px #20204a; }
+  form input:focus, form textarea:focus {
+    background-color: #222251; }
+
+form {
+  text-align: center; }
+
+form button {
+  width: 150px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 12px;
+  background-color: #540e33;
+  color: aliceblue;
+  border-style: solid;
+  border-width: .2px;
+  border-color: aliceblue;
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  transition: color 0.5s;
+  margin-top: 30px;
+  cursor: pointer; }
+  form button:hover {
+    color: #540e33; }
+  form button:hover span {
+    width: 100%; }
+
+form button span {
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: aliceblue;
+  z-index: -1;
+  transition: 0.5s; }
+
+#msgConfirm {
+  color: #000046;
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 600; }
+
+/* Contact Section Media Queries */
+@media screen and (max-width: 770px) {
+  .containerContact h1 {
+    font-size: 45px;
+    margin-bottom: 50px; }
+  .contactInfo {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 35px; }
+  .contactForm {
+    flex-basis: 100%; } }
 
 /* Footer Styles */
 #footer {
