@@ -19,7 +19,8 @@ main {
   background: #540e33;
   color: aliceblue; }
   main h1 {
-    -webkit-text-stroke: 2px #20204a; }
+    color: #20204a;
+    -webkit-text-stroke: 1.5px aliceblue; }
 
 .header {
   padding: 10px 10%; }
@@ -270,7 +271,7 @@ nav .fa-solid {
   justify-content: center; }
 
 .userImg img {
-  width: 80%; }
+  width: 70%; }
 
 .userInfo {
   flex-basis: 40%;
@@ -380,55 +381,6 @@ nav .fa-solid {
     margin-top: 10px;
     font-size: 15px; } }
 
-/* WORKS SECTION STYLES */
-.works {
-  margin-top: 65px;
-  margin-bottom: 65px; }
-
-.works .hr-line {
-  width: 100px;
-  height: 4px;
-  background-color: #000046;
-  display: inline-block; }
-
-.works h1 {
-  text-transform: uppercase;
-  margin-top: 16px;
-  margin-bottom: 16px; }
-
-.myworks h3 {
-  margin-top: 16px; }
-
-.myworks .image-proyects {
-  overflow: hidden; }
-
-.myworks .image-proyects img {
-  border-radius: 35px;
-  transform: scale(1.2);
-  transition: all 0.4s ease; }
-
-.myworks:hover .image-proyects img {
-  transform: scale(1); }
-
-.link-arrow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  color: white;
-  text-decoration: none; }
-
-.link-arrow i {
-  transition: all 0.4s ease;
-  margin-left: 10px; }
-
-.link-arrow:hover {
-  color: #000046;
-  font-weight: 600; }
-
-.link-arrow:hover i {
-  transform: translate(5px, -5px); }
-
 /* CONTACT STYLES */
 #sectionContact {
   padding: 100px 0;
@@ -462,7 +414,7 @@ nav .fa-solid {
   font-size: 20px; }
 
 .imgContact img {
-  width: 100%;
+  width: 80%;
   margin-top: 20px; }
 
 .contactForm {

@@ -21,6 +21,7 @@ main{
     color: $fontColor;
 
     h1{
-        -webkit-text-stroke: 2px #20204a;
+        color: #20204a;
+        -webkit-text-stroke: 1.5px aliceblue;
     }
 }
