@@ -337,7 +337,7 @@ nav .fa-solid{
 .userInfo a{
     font-weight: 600;
     text-decoration: none;
-    color: $secondaryColor;
+    color: $fontColor;
     cursor: pointer;
     transition: .4s ease-in-out;
 
@@ -394,10 +394,10 @@ nav .fa-solid{
 .iconUser i{
     margin-inline: 8px;
     cursor: pointer;
-    transition: .4s ease-in-out;
+    transition: .3s ease;
 
     &:hover{
-        color: $secondaryColor;
+        color: $hoverColor;
     }
 }
 
@@ -603,7 +603,7 @@ form button span{
 
     &:hover{
         transform: translateY(-10px);
-        color: $secondaryColor;
+        color: $hoverColor;
     }
 }
 
@@ -633,7 +633,7 @@ form button span{
 
     .scrollUp:focus{
         transform: translateY(-5px);
-        color: $secondaryColor;
+        color: $hoverColor;
     }
 
     .showScroll{
