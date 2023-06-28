@@ -11,7 +11,7 @@ $modalColor: rgba(17, 17, 17, 0.741); */
 body {
   min-height: 100vh;
   overflow-x: hidden;
-  background: linear-gradient(#000046, #1CB5E0);
+  background: linear-gradient(#000046, #1964b4);
   color: aliceblue; }
 
 main {
@@ -288,11 +288,11 @@ nav .fa-solid {
 .userInfo a {
   font-weight: 600;
   text-decoration: none;
-  color: #000046;
+  color: aliceblue;
   cursor: pointer;
   transition: .4s ease-in-out; }
   .userInfo a:hover {
-    color: #1CB5E0; }
+    color: #1964b4; }
 
 .btnUser a {
   width: 180px;
@@ -334,9 +334,9 @@ nav .fa-solid {
 .iconUser i {
   margin-inline: 8px;
   cursor: pointer;
-  transition: .4s ease-in-out; }
+  transition: .3s ease; }
   .iconUser i:hover {
-    color: #000046; }
+    color: #1964b4; }
 
 /* User Section Media Queries */
 @media screen and (max-width: 770px) {
@@ -489,7 +489,7 @@ form button span {
   z-index: 10; }
   .scrollUp:hover {
     transform: translateY(-10px);
-    color: #000046; }
+    color: #1964b4; }
 
 .showScroll {
   bottom: 25px; }
@@ -511,7 +511,7 @@ form button span {
     font-size: 20px; }
   .scrollUp:focus {
     transform: translateY(-5px);
-    color: #000046; }
+    color: #1964b4; }
   .showScroll {
     bottom: 30px; } }
 
